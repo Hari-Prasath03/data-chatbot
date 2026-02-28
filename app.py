@@ -13,7 +13,7 @@ st.title("🤖 AI Data Assistant (Gemini Powered)")
 # Gemini Configuration
 # -------------------------
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key='AIzaSyDoKqScgOJk2Srlpta7QeX0nxpO27a0K1k')
+genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # -------------------------
